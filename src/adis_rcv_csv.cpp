@@ -520,13 +520,14 @@ void AdisRcvCsv::GetAcc(double ret[]) {
   ret[0] = accl_[0];
   ret[1] = accl_[1];
   ret[2] = accl_[2];
-  
+  /*
   // convert unit gm/s^2 to m/s^2
   if (pd_ == Product::ADIS16500 || pd_ == Product::ADIS16505_2) {
     ret[0] /= GRAVITY;
     ret[1] /= GRAVITY;
     ret[2] /= GRAVITY;
   }
+  */
 }
 
 void AdisRcvCsv::GetGyro(double ret[]) {
